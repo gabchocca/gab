@@ -1,1 +1,66 @@
-<p>profesores works!</p>
+<section id="docentes" class="py-5">
+
+    <div class="container">
+  
+      <div class="text-center mb-5">
+  
+        <span class="text-primary fw-bold">
+          NUESTRO EQUIPO
+        </span>
+  
+        <h2 class="fw-bold">
+          Nuestros docentes
+        </h2>
+  
+        <p class="text-secondary">
+          Profesionales especializados en la enseñanza de idiomas.
+        </p>
+  
+      </div>
+  
+      <div class="row g-4">
+  
+        @for (docente of docentes; track docente.nombre) {
+  
+          <div class="col-md-6 col-lg-3">
+  
+            <div class="card h-100 border-0 shadow-sm text-center">
+  
+              <div class="card-body p-4">
+  
+                <div class="rounded-circle bg-primary-subtle text-primary
+                            d-flex align-items-center justify-content-center
+                            mx-auto mb-3"
+                     style="width:80px;height:80px;">
+  
+                  <span class="fs-4 fw-bold">
+                    {{ docente.iniciales }}
+                  </span>
+  
+                </div>
+  
+                <h3 class="h5 fw-bold">
+                  {{ docente.nombre }}
+                </h3>
+  
+                <p class="text-primary fw-bold">
+                  {{ docente.idioma }}
+                </p>
+  
+                <p class="small text-secondary">
+                  {{ docente.especialidad }}
+                </p>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        }
+  
+      </div>
+  
+    </div>
+  
+  </section>
