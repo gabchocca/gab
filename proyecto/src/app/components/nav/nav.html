@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold text-primary" href="#inicio">
+
+      <span class="logo">
+        GL
+      </span>
+
+      Global Languages
+
+    </a>
+
+
+    <!-- BOTÓN RESPONSIVE -->
+    <button class="navbar-toggler" type="button" (click)="menuOpen = !menuOpen">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <!-- MENÚ -->
+    <div class="collapse navbar-collapse" [class.show]="menuOpen">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#idiomas" (click)="cerrarMenu()">
+
+            Idiomas
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#programas" (click)="cerrarMenu()">
+
+            Programas
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#docentes" (click)="cerrarMenu()">
+
+            Docentes
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#horarios" (click)="cerrarMenu()">
+
+            Horarios
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonios" (click)="cerrarMenu()">
+
+            Testimonios
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros" (click)="cerrarMenu()">
+
+            Nosotros
+
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+
+          <a href="#horarios" class="btn btn-primary" (click)="cerrarMenu()">
+
+            Ver horarios
+
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
