@@ -1,0 +1,59 @@
+<section id="idiomas" class="py-5">
+
+    <div class="container">
+  
+      <div class="text-center mb-5">
+  
+        <span class="text-primary fw-bold">
+          OFERTA ACADÉMICA
+        </span>
+  
+        <h2 class="fw-bold">
+          Idiomas disponibles
+        </h2>
+  
+        <p class="text-secondary">
+          Elige el idioma que quieres aprender.
+        </p>
+  
+      </div>
+  
+      <div class="row g-4">
+  
+        @for (idioma of idiomas; track idioma.nombre) {
+  
+          <div class="col-md-6 col-lg-4">
+  
+            <div class="card h-100 border-0 shadow-sm">
+  
+              <div class="card-body p-4">
+  
+                <div class="display-5 mb-3">
+                  {{ idioma.icono }}
+                </div>
+  
+                <h3 class="h5 fw-bold">
+                  {{ idioma.nombre }}
+                </h3>
+  
+                <p class="text-secondary">
+                  {{ idioma.descripcion }}
+                </p>
+  
+                <span class="badge bg-light text-dark">
+                  {{ idioma.niveles }}
+                </span>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        }
+  
+      </div>
+  
+    </div>
+  
+  </section>
