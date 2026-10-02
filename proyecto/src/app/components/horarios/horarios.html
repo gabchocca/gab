@@ -1,1 +1,94 @@
-<p>horarios works!</p>
+<section id="horarios" class="py-5 bg-light">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <span class="text-primary fw-bold">
+        HORARIOS
+      </span>
+
+      <h2 class="fw-bold mt-2">
+        Horarios y promociones
+      </h2>
+
+      <p class="text-secondary">
+        Revisa nuestros horarios disponibles.
+      </p>
+
+    </div>
+
+
+    <div class="table-responsive bg-white rounded shadow">
+
+      <table class="table table-hover mb-0">
+
+        <thead class="table-primary">
+
+          <tr>
+
+            <th>Idioma</th>
+            <th>Nivel</th>
+            <th>Modalidad</th>
+            <th>Horario</th>
+            <th>Promoción</th>
+
+          </tr>
+
+        </thead>
+
+
+        <tbody>
+
+          @for (horario of horarios; track horario.idioma) {
+
+          <tr>
+
+            <td>
+              {{ horario.idioma }}
+            </td>
+
+            <td>
+              {{ horario.nivel }}
+            </td>
+
+            <td>
+              {{ horario.modalidad }}
+            </td>
+
+            <td>
+              {{ horario.horario }}
+            </td>
+
+            <td>
+
+              <span class="badge bg-success">
+
+                {{ horario.promocion }}
+
+              </span>
+
+            </td>
+
+          </tr>
+
+          }
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+
+    <div class="alert alert-primary mt-4">
+
+      <strong>Promoción vigente:</strong>
+
+      Matrícula sin costo para nuevos estudiantes.
+
+    </div>
+
+  </div>
+
+</section>
